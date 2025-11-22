@@ -1,0 +1,7 @@
+from pathlib import Path
+
+content = "google.com, pub-6047761552776926, DIRECT, f08c47fec0942fa0\n"
+file_path = Path("/mnt/data/app-ads.txt")
+file_path.write_text(content, encoding="utf-8")
+
+file_path
