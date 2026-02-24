@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to App Store</title>
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent;
+
+            if (userAgent.includes("iPhone") || userAgent.includes("iPad")) {
+                window.location.href = "https://apps.apple.com";
+            } else if (userAgent.includes("Android")) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.msarweb.oscar_user";
+            } else {
+                window.location.href = "https://www.example.com"; // Fallback URL
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+</body>
+</html>
